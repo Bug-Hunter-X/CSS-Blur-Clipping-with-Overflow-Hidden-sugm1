@@ -1,0 +1,18 @@
+There are several ways to work around this issue.  One approach is to apply the blur to a parent element that does not have `overflow: hidden;`.  Another is to use a larger container with a larger padding. Here's an example using a larger container:
+
+```css
+.container {
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.blurred-element {
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+}
+```
+
+By adding padding, the blur extends beyond the visible area of the element without being clipped.  Adjust the padding value to control the blur's extent.
