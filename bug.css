@@ -1,0 +1,1 @@
+The CSS property `filter: blur(5px);` is applied to an element that has `overflow: hidden;`. This combination can result in unexpected behavior, where the blurred effect is clipped by the `overflow: hidden;` property.  The blur extends beyond the element's boundaries, and since the overflow is hidden, this extended blur is not visible.
